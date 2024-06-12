@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/secondary"
+    android:id="@+id/main"
+    tools:context=".view.start.HomeActivity">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        app:strokeColor="@color/primary"
+        android:layout_height="240dp"
+        app:shapeAppearanceOverlay="@style/CustomCardShape"
+        android:backgroundTint="@color/primary">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/explore"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsbold">
+        </TextView>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/et_profile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_profile"
+            tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tv_hi_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hi"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppinsbold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/desc1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck"
+            android:fontFamily="@font/poppinsregular">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/search_bar"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="56dp"
+            android:background="@drawable/bg_all_rounded"
+            android:queryHint="@string/search_hint"
+            android:textColorHint="@color/primary"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/highlight"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsbold">
+    </TextView>
+
+</RelativeLayout>
