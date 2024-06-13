@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -13,6 +14,7 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.dicoding.semaroam.R;
 import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.search.SearchBar;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -28,20 +30,37 @@ public final class ActivityHomeBinding implements ViewBinding {
   public final ImageButton etProfile;
 
   @NonNull
+  public final ImageView eventImage;
+
+  @NonNull
+  public final TextView eventLocation;
+
+  @NonNull
+  public final TextView eventName;
+
+  @NonNull
+  public final TextView eventTime;
+
+  @NonNull
   public final RelativeLayout main;
 
   @NonNull
-  public final ImageButton searchBar;
+  public final SearchBar searchBar;
 
   @NonNull
   public final TextView tvHiUser;
 
   private ActivityHomeBinding(@NonNull RelativeLayout rootView, @NonNull MaterialCardView card,
-      @NonNull ImageButton etProfile, @NonNull RelativeLayout main, @NonNull ImageButton searchBar,
-      @NonNull TextView tvHiUser) {
+      @NonNull ImageButton etProfile, @NonNull ImageView eventImage,
+      @NonNull TextView eventLocation, @NonNull TextView eventName, @NonNull TextView eventTime,
+      @NonNull RelativeLayout main, @NonNull SearchBar searchBar, @NonNull TextView tvHiUser) {
     this.rootView = rootView;
     this.card = card;
     this.etProfile = etProfile;
+    this.eventImage = eventImage;
+    this.eventLocation = eventLocation;
+    this.eventName = eventName;
+    this.eventTime = eventTime;
     this.main = main;
     this.searchBar = searchBar;
     this.tvHiUser = tvHiUser;
@@ -86,10 +105,34 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.event_image;
+      ImageView eventImage = ViewBindings.findChildViewById(rootView, id);
+      if (eventImage == null) {
+        break missingId;
+      }
+
+      id = R.id.event_location;
+      TextView eventLocation = ViewBindings.findChildViewById(rootView, id);
+      if (eventLocation == null) {
+        break missingId;
+      }
+
+      id = R.id.event_name;
+      TextView eventName = ViewBindings.findChildViewById(rootView, id);
+      if (eventName == null) {
+        break missingId;
+      }
+
+      id = R.id.event_time;
+      TextView eventTime = ViewBindings.findChildViewById(rootView, id);
+      if (eventTime == null) {
+        break missingId;
+      }
+
       RelativeLayout main = (RelativeLayout) rootView;
 
       id = R.id.search_bar;
-      ImageButton searchBar = ViewBindings.findChildViewById(rootView, id);
+      SearchBar searchBar = ViewBindings.findChildViewById(rootView, id);
       if (searchBar == null) {
         break missingId;
       }
@@ -100,8 +143,8 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityHomeBinding((RelativeLayout) rootView, card, etProfile, main, searchBar,
-          tvHiUser);
+      return new ActivityHomeBinding((RelativeLayout) rootView, card, etProfile, eventImage,
+          eventLocation, eventName, eventTime, main, searchBar, tvHiUser);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

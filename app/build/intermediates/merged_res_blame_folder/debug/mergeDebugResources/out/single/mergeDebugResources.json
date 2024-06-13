@@ -4,16 +4,16 @@
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-33:\\drawable\\bg_all_rounded.xml"
     },
     {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\layout_fragment_ulasan.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-33:\\layout\\fragment_ulasan.xml"
+    },
+    {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\font_poppinsbold.ttf.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-33:\\font\\poppinsbold.ttf"
     },
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\drawable_baseline_arrow_back_24.xml.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-33:\\drawable\\baseline_arrow_back_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\layout_fragment_ulasan.xml.flat",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-33:\\layout\\fragment_ulasan.xml"
     },
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\layout_activity_login.xml.flat",
@@ -44,12 +44,12 @@
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-33:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\font_oswaldregular.ttf.flat",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-33:\\font\\oswaldregular.ttf"
-    },
-    {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-33:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\font_oswaldregular.ttf.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-33:\\font\\oswaldregular.ttf"
     },
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\mipmap-hdpi_ic_launcher.webp.flat",
@@ -76,10 +76,6 @@
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-33:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.dicoding.semaroam.app-debug-31:/layout_activity_home.xml.flat",
-        "source": "com.dicoding.semaroam.app-main-33:/layout/activity_home.xml"
-    },
-    {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\font_poppinsregular.ttf.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-33:\\font\\poppinsregular.ttf"
     },
@@ -90,10 +86,6 @@
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\layout_fragment_versi.xml.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-33:\\layout\\fragment_versi.xml"
-    },
-    {
-        "merged": "com.dicoding.semaroam.app-debug-31:/layout_activity_profile.xml.flat",
-        "source": "com.dicoding.semaroam.app-main-33:/layout/activity_profile.xml"
     },
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\layout_activity_register.xml.flat",
@@ -142,6 +134,14 @@
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\drawable_button_bg.xml.flat",
         "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-33:\\drawable\\button_bg.xml"
+    },
+    {
+        "merged": "com.dicoding.semaroam.app-debug-31:/layout_fragment_versi.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-33:/layout/fragment_versi.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\drawable_lawangsewu.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-33:\\drawable\\lawangsewu.jpg"
     },
     {
         "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-31:\\layout_activity_profile.xml.flat",

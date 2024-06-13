@@ -3030,6 +3030,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_profile
 drawable ic_search_black_24
 drawable indeterminate_static
+drawable lawangsewu
 drawable logo
 drawable logout
 drawable m3_avd_hide_password
@@ -3299,6 +3300,10 @@ id et_name
 id et_password
 id et_profile
 id et_username
+id event_image
+id event_location
+id event_name
+id event_time
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3890,6 +3895,7 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string copyright
 string desc1
 string detail
 string error_a11y_label

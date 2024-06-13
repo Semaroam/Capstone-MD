@@ -13,6 +13,7 @@ drawable circle
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_profile
+drawable lawangsewu
 drawable logo
 drawable logout
 font bebas
@@ -27,6 +28,10 @@ id et_name
 id et_password
 id et_profile
 id et_username
+id event_image
+id event_location
+id event_name
+id event_time
 id imageView
 id landingTextView1
 id landingTextView2
@@ -59,6 +64,7 @@ mipmap ic_launcher_round
 string already_sign_up
 string app_name
 string back
+string copyright
 string desc1
 string detail
 string explore
