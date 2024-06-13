@@ -20,12 +20,13 @@ import androidx.viewpager2.widget.ViewPager2
 import com.dicoding.semaroam.R
 import com.dicoding.semaroam.adapter.MyPagerAdapter
 import com.google.android.material.tabs.TabLayout
-
+import com.dicoding.semaroam.view.start.HomeActivity
 
 class ProfileActivity : AppCompatActivity() {
     private lateinit var nameTextView: TextView
     private lateinit var usernameTextView: TextView
     private lateinit var logoutButton: ImageButton
+    private lateinit var backButton: ImageButton
     private lateinit var sharedPreferences: SharedPreferences
     private lateinit var binding: ActivityProfileBinding
     private lateinit var authService: AuthService
@@ -48,10 +49,10 @@ class ProfileActivity : AppCompatActivity() {
             }
         }.attach()
 
-
         nameTextView = binding.textView2
         usernameTextView = binding.textView3
         logoutButton = binding.logoutButton
+        backButton = binding.backButton
         sharedPreferences = getSharedPreferences("user_pref", MODE_PRIVATE)
 
         authService = ApiConfig.getApiService()
@@ -60,6 +61,10 @@ class ProfileActivity : AppCompatActivity() {
 
         logoutButton.setOnClickListener {
             logoutUser()
+        }
+
+        backButton.setOnClickListener {
+            navigateToHome()
         }
     }
 
@@ -78,6 +83,7 @@ class ProfileActivity : AppCompatActivity() {
                 if (response.isSuccessful) {
                     clearUserData()
                     navigateToLogin()
+                    Toast.makeText(this@ProfileActivity, "User was logged out successfully!", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(this@ProfileActivity, "Logout failed", Toast.LENGTH_SHORT).show()
                 }
@@ -98,6 +104,12 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun navigateToLogin() {
         val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
+    private fun navigateToHome() {
+        val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
         finish()
     }
