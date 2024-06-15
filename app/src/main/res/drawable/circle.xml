@@ -6,5 +6,6 @@
         android:bottomLeftRadius="300dp"
         android:topRightRadius="300dp"
         android:topLeftRadius="300dp"
-        android:bottomRightRadius="300dp"/> <!-- Jari-jari sudut yang dibulatkan -->
+        android:bottomRightRadius="300dp"
+        />
 </shape>

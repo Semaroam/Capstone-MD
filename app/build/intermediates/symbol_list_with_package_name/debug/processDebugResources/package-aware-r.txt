@@ -3030,6 +3030,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_profile
 drawable ic_search_black_24
 drawable indeterminate_static
+drawable lawangsewu
 drawable logo
 drawable logout
 drawable m3_avd_hide_password
@@ -3217,6 +3218,14 @@ id callMeasure
 id cancel_button
 id card
 id carryVelocity
+id category
+id category1_container
+id category2_container
+id category3_container
+id category4_container
+id category5_container
+id category_label
+id category_results_recycler_view
 id center
 id centerCrop
 id centerInside
@@ -3229,6 +3238,8 @@ id checkbox
 id checked
 id chronometer
 id circle_center
+id city
+id city_label
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -3259,6 +3270,8 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id description
+id description_label
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3321,6 +3334,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3330,6 +3344,7 @@ id groups
 id header_title
 id hide_ime_id
 id hideable
+id highlight_container
 id home
 id homeAsUp
 id honorRequest
@@ -3477,6 +3492,14 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id place_city
+id place_id
+id place_id_label
+id place_image
+id place_name
+id place_name_label
+id place_ratings
+id place_ratings_label
 id position
 id postLayout
 id pressed
@@ -3487,6 +3510,7 @@ id radio
 id ratio
 id rectangles
 id register_link
+id relativeLayout
 id report_drawn
 id reverseSawtooth
 id right
@@ -3513,7 +3537,9 @@ id search_edit_frame
 id search_go_btn
 id search_mag_icon
 id search_plate
+id search_results_container
 id search_src_text
+id search_view
 id search_voice_btn
 id select_dialog_listview
 id selected
@@ -3595,6 +3621,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id title_text_view
 id toggle
 id top
 id topPanel
@@ -3752,11 +3779,14 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_category_results
+layout activity_detail
 layout activity_home
 layout activity_login
 layout activity_main
 layout activity_profile
 layout activity_register
+layout activity_search_results
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3777,6 +3807,8 @@ layout fragment_ulasan
 layout fragment_versi
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_category_result
+layout item_place_card
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3890,6 +3922,7 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string copyright
 string desc1
 string detail
 string error_a11y_label
@@ -3945,6 +3978,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string more
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked
 string mtrl_checkbox_button_icon_path_group_name

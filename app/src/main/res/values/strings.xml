@@ -16,10 +16,12 @@
     <string name="desc1">Kami telah merekomendasikan tempat tempat terbaik untuk anda, lihatlah dan jelajahi.</string>
     <string name="highlight">Highlight Event</string>
     <string name="welcome_message">Welcome to Home!</string>
-    <string name="back">Go back</string>
+    <string name="back">Kembali</string>
     <string name="profil">Profil</string>
     <string name="logout">Keluar</string>
-    <string name="search_hint">Apa yang sedang anda cari ...</string>
+    <string name="search_hint">Apa yang anda cari ...</string>
+    <string name="copyright">© 2024 Semaroam</string>
+    <string name="more">Explore semarang</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

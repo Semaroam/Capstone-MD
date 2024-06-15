@@ -32,6 +32,26 @@ data class UserData(
     val createdAt: String
 )
 
+data class PlaceResponse(
+    val message: String,
+    val data: List<PlaceData>
+)
+
+data class PlaceDetailResponse(
+    val message: String,
+    val data: PlaceData?
+)
+
+data class PlaceData(
+    val Description: String,
+    val Category: String,
+    val Place_Id: Int,
+    val Place_Ratings: Int,
+    val Place_Name: String,
+    val City: String,
+    val Image: String
+)
+
 interface AuthService {
     @POST("signin")
     fun loginUser(@Body request: LoginRequest): Call<LoginResponse>
@@ -45,5 +65,15 @@ interface AuthService {
     @GET("user/{id}")
     fun getUserById(@Path("id") userId: String): Call<UserResponse>
 
+    @GET("place")
+    fun getAllPlaces(): Call<PlaceResponse>
 
+    @GET("place/{id}")
+    fun getPlaceById(@Path("id") placeId: Int): Call<PlaceDetailResponse>
+
+    @GET("place/keyword/{keyword}")
+    fun getPlaceByKeyword(@Path("keyword") keyword: String): Call<PlaceResponse>
+
+    @GET("place/category/{category}")
+    fun getPlaceByCategory(@Path("category") category: String): Call<PlaceResponse>
 }
