@@ -2991,6 +2991,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_arrow_back_24
+drawable baseline_arrow_right_24
 drawable bg_all_rounded
 drawable bg_rounded
 drawable btn_checkbox_checked_mtrl
@@ -3312,10 +3313,6 @@ id et_name
 id et_password
 id et_profile
 id et_username
-id event_image
-id event_location
-id event_name
-id event_time
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3377,6 +3374,7 @@ id layout
 id left
 id leftToRight
 id legacy
+id like
 id line1
 id line3
 id linear
@@ -3517,6 +3515,7 @@ id register_link
 id relativeLayout
 id report_drawn
 id reverseSawtooth
+id review
 id right
 id rightToLeft
 id right_icon
@@ -3943,6 +3942,7 @@ string icon_content_description
 string item_view_role_description
 string landing_text_part1
 string landing_text_part2
+string like
 string logout
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
@@ -4054,6 +4054,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string profil
+string review
 string search_hint
 string search_menu_title
 string searchbar_scrolling_view_behavior

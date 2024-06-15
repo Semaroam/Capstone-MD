@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
+import androidx.cardview.widget.CardView
 import com.dicoding.semaroam.R
 
 class UlasanFragment : Fragment() {
@@ -19,7 +19,15 @@ class UlasanFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val imageView: ImageView = view.findViewById(R.id.ulasan)
-        imageView.setImageResource(R.drawable.bg_rounded)
+
+        val reviewCard: CardView = view.findViewById(R.id.review)
+        reviewCard.setOnClickListener {
+            // Handle review card click
+        }
+
+        val likeCard: CardView = view.findViewById(R.id.like)
+        likeCard.setOnClickListener {
+            // Handle like card click
+        }
     }
 }

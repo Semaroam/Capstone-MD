@@ -4,10 +4,10 @@ package com.dicoding.semaroam.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.dicoding.semaroam.R;
@@ -17,19 +17,28 @@ import java.lang.String;
 
 public final class FragmentUlasanBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
-  public final ImageView ulasan;
+  public final CardView like;
 
-  private FragmentUlasanBinding(@NonNull FrameLayout rootView, @NonNull ImageView ulasan) {
+  @NonNull
+  public final CardView review;
+
+  @NonNull
+  public final LinearLayout ulasan;
+
+  private FragmentUlasanBinding(@NonNull LinearLayout rootView, @NonNull CardView like,
+      @NonNull CardView review, @NonNull LinearLayout ulasan) {
     this.rootView = rootView;
+    this.like = like;
+    this.review = review;
     this.ulasan = ulasan;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -54,13 +63,21 @@ public final class FragmentUlasanBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.ulasan;
-      ImageView ulasan = ViewBindings.findChildViewById(rootView, id);
-      if (ulasan == null) {
+      id = R.id.like;
+      CardView like = ViewBindings.findChildViewById(rootView, id);
+      if (like == null) {
         break missingId;
       }
 
-      return new FragmentUlasanBinding((FrameLayout) rootView, ulasan);
+      id = R.id.review;
+      CardView review = ViewBindings.findChildViewById(rootView, id);
+      if (review == null) {
+        break missingId;
+      }
+
+      LinearLayout ulasan = (LinearLayout) rootView;
+
+      return new FragmentUlasanBinding((LinearLayout) rootView, like, review, ulasan);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

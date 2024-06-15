@@ -158,6 +158,8 @@
                 android:fontFamily="@font/poppinsbold">
             </TextView>
 
+
+
             <LinearLayout
                 android:id="@+id/category1_container"
                 android:layout_width="match_parent"
