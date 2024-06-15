@@ -3312,6 +3312,10 @@ id et_name
 id et_password
 id et_profile
 id et_username
+id event_image
+id event_location
+id event_name
+id event_time
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu

@@ -6,16 +6,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.SearchView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.dicoding.semaroam.R;
 import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.search.SearchBar;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -28,74 +27,42 @@ public final class ActivityHomeBinding implements ViewBinding {
   public final MaterialCardView card;
 
   @NonNull
-  public final LinearLayout category1Container;
-
-  @NonNull
-  public final LinearLayout category2Container;
-
-  @NonNull
-  public final LinearLayout category3Container;
-
-  @NonNull
-  public final LinearLayout category4Container;
-
-  @NonNull
-  public final LinearLayout category5Container;
-
-  @NonNull
-  public final TextView city;
-
-  @NonNull
   public final ImageButton etProfile;
 
   @NonNull
-  public final LinearLayout highlightContainer;
+  public final ImageView eventImage;
 
   @NonNull
-  public final ImageView image;
+  public final TextView eventLocation;
+
+  @NonNull
+  public final TextView eventName;
+
+  @NonNull
+  public final TextView eventTime;
 
   @NonNull
   public final RelativeLayout main;
 
   @NonNull
-  public final TextView placeName;
-
-  @NonNull
-  public final TextView placeRatings;
-
-  @NonNull
-  public final RelativeLayout relativeLayout;
-
-  @NonNull
-  public final SearchView searchView;
+  public final SearchBar searchBar;
 
   @NonNull
   public final TextView tvHiUser;
 
   private ActivityHomeBinding(@NonNull RelativeLayout rootView, @NonNull MaterialCardView card,
-      @NonNull LinearLayout category1Container, @NonNull LinearLayout category2Container,
-      @NonNull LinearLayout category3Container, @NonNull LinearLayout category4Container,
-      @NonNull LinearLayout category5Container, @NonNull TextView city,
-      @NonNull ImageButton etProfile, @NonNull LinearLayout highlightContainer,
-      @NonNull ImageView image, @NonNull RelativeLayout main, @NonNull TextView placeName,
-      @NonNull TextView placeRatings, @NonNull RelativeLayout relativeLayout,
-      @NonNull SearchView searchView, @NonNull TextView tvHiUser) {
+      @NonNull ImageButton etProfile, @NonNull ImageView eventImage,
+      @NonNull TextView eventLocation, @NonNull TextView eventName, @NonNull TextView eventTime,
+      @NonNull RelativeLayout main, @NonNull SearchBar searchBar, @NonNull TextView tvHiUser) {
     this.rootView = rootView;
     this.card = card;
-    this.category1Container = category1Container;
-    this.category2Container = category2Container;
-    this.category3Container = category3Container;
-    this.category4Container = category4Container;
-    this.category5Container = category5Container;
-    this.city = city;
     this.etProfile = etProfile;
-    this.highlightContainer = highlightContainer;
-    this.image = image;
+    this.eventImage = eventImage;
+    this.eventLocation = eventLocation;
+    this.eventName = eventName;
+    this.eventTime = eventTime;
     this.main = main;
-    this.placeName = placeName;
-    this.placeRatings = placeRatings;
-    this.relativeLayout = relativeLayout;
-    this.searchView = searchView;
+    this.searchBar = searchBar;
     this.tvHiUser = tvHiUser;
   }
 
@@ -132,83 +99,41 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.category1_container;
-      LinearLayout category1Container = ViewBindings.findChildViewById(rootView, id);
-      if (category1Container == null) {
-        break missingId;
-      }
-
-      id = R.id.category2_container;
-      LinearLayout category2Container = ViewBindings.findChildViewById(rootView, id);
-      if (category2Container == null) {
-        break missingId;
-      }
-
-      id = R.id.category3_container;
-      LinearLayout category3Container = ViewBindings.findChildViewById(rootView, id);
-      if (category3Container == null) {
-        break missingId;
-      }
-
-      id = R.id.category4_container;
-      LinearLayout category4Container = ViewBindings.findChildViewById(rootView, id);
-      if (category4Container == null) {
-        break missingId;
-      }
-
-      id = R.id.category5_container;
-      LinearLayout category5Container = ViewBindings.findChildViewById(rootView, id);
-      if (category5Container == null) {
-        break missingId;
-      }
-
-      id = R.id.city;
-      TextView city = ViewBindings.findChildViewById(rootView, id);
-      if (city == null) {
-        break missingId;
-      }
-
       id = R.id.et_profile;
       ImageButton etProfile = ViewBindings.findChildViewById(rootView, id);
       if (etProfile == null) {
         break missingId;
       }
 
-      id = R.id.highlight_container;
-      LinearLayout highlightContainer = ViewBindings.findChildViewById(rootView, id);
-      if (highlightContainer == null) {
+      id = R.id.event_image;
+      ImageView eventImage = ViewBindings.findChildViewById(rootView, id);
+      if (eventImage == null) {
         break missingId;
       }
 
-      id = R.id.image;
-      ImageView image = ViewBindings.findChildViewById(rootView, id);
-      if (image == null) {
+      id = R.id.event_location;
+      TextView eventLocation = ViewBindings.findChildViewById(rootView, id);
+      if (eventLocation == null) {
+        break missingId;
+      }
+
+      id = R.id.event_name;
+      TextView eventName = ViewBindings.findChildViewById(rootView, id);
+      if (eventName == null) {
+        break missingId;
+      }
+
+      id = R.id.event_time;
+      TextView eventTime = ViewBindings.findChildViewById(rootView, id);
+      if (eventTime == null) {
         break missingId;
       }
 
       RelativeLayout main = (RelativeLayout) rootView;
 
-      id = R.id.place_name;
-      TextView placeName = ViewBindings.findChildViewById(rootView, id);
-      if (placeName == null) {
-        break missingId;
-      }
-
-      id = R.id.place_ratings;
-      TextView placeRatings = ViewBindings.findChildViewById(rootView, id);
-      if (placeRatings == null) {
-        break missingId;
-      }
-
-      id = R.id.relativeLayout;
-      RelativeLayout relativeLayout = ViewBindings.findChildViewById(rootView, id);
-      if (relativeLayout == null) {
-        break missingId;
-      }
-
-      id = R.id.search_view;
-      SearchView searchView = ViewBindings.findChildViewById(rootView, id);
-      if (searchView == null) {
+      id = R.id.search_bar;
+      SearchBar searchBar = ViewBindings.findChildViewById(rootView, id);
+      if (searchBar == null) {
         break missingId;
       }
 
@@ -218,10 +143,8 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityHomeBinding((RelativeLayout) rootView, card, category1Container,
-          category2Container, category3Container, category4Container, category5Container, city,
-          etProfile, highlightContainer, image, main, placeName, placeRatings, relativeLayout,
-          searchView, tvHiUser);
+      return new ActivityHomeBinding((RelativeLayout) rootView, card, etProfile, eventImage,
+          eventLocation, eventName, eventTime, main, searchBar, tvHiUser);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

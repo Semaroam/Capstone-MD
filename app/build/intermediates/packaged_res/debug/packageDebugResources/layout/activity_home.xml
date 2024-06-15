@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -21,12 +22,12 @@
             android:textStyle="bold"
             android:textSize="25sp"
             android:textAlignment="center"
-            android:textColor="@color/white">
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsbold">
         </TextView>
     </com.google.android.material.card.MaterialCardView>
 
     <RelativeLayout
-        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -41,21 +42,19 @@
             android:layout_marginEnd="8dp"
             android:background="@drawable/ic_profile"
             tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck">
-
         </ImageButton>
 
         <TextView
             android:id="@+id/tv_hi_user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="80dp"
-            android:fontFamily="@font/poppinsbold"
             android:text="@string/hi"
             android:textColor="@color/white"
             android:textSize="16sp"
-            android:textStyle="bold">
-
+            android:textStyle="bold"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppinsbold">
         </TextView>
 
         <TextView
@@ -64,12 +63,11 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="120dp"
             android:layout_marginRight="20dp"
-            android:fontFamily="@font/poppinsregular"
             android:text="@string/desc1"
             android:textColor="@color/white"
             android:textSize="14sp"
-            tools:ignore="TextContrastCheck">
-
+            tools:ignore="TextContrastCheck"
+            android:fontFamily="@font/poppinsregular">
         </TextView>
 
 
@@ -83,8 +81,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="50dp">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
@@ -99,190 +96,95 @@
             </TextView>
 
             <LinearLayout
-                android:id="@+id/highlight_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/bg_all_rounded"
                 android:layout_marginLeft="30dp"
-                android:padding="10dp"
-                android:layout_marginRight="30dp">
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="wrap_content"
                     app:cardCornerRadius="10dp">
 
                     <ImageView
-                        android:id="@+id/image"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:id="@+id/event_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lawangsewu"
                         android:scaleType="centerCrop" />
 
                 </com.google.android.material.card.MaterialCardView>
 
+
+
                 <TextView
-                    android:id="@+id/place_name"
+                    android:id="@+id/event_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginLeft="8dp"
+                    android:text="Lawang Sewu"
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/city"
+                    android:id="@+id/event_location"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:layout_marginLeft="8dp"
+                    android:text="Semarang"
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/place_ratings"
+                    android:id="@+id/event_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:layout_marginLeft="8dp"
+                    android:text="09.00-17.00"
                     android:textSize="14sp" />
 
             </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/more"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"
-                android:textSize="15sp"
-                android:fontFamily="@font/poppinsbold">
-            </TextView>
-
-            <LinearLayout
-                android:id="@+id/category1_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_all_rounded"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Bahari"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/poppinsbold">
-                </TextView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/category2_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_all_rounded"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Budaya"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/poppinsbold">
-                </TextView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/category3_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_all_rounded"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Taman Hiburan"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/poppinsbold">
-                </TextView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/category4_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_all_rounded"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Cagar Alam"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/poppinsbold">
-                </TextView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/category5_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_all_rounded"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Tempat Ibadah"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/poppinsbold">
-                </TextView>
-
-            </LinearLayout>
-
 
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="280dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="215dp"
-        android:layout_centerHorizontal="true"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="30dp">
+        <!-- NestedScrollingChild goes here (NestedScrollView, RecyclerView, etc.). -->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/searchbar_scrolling_view_behavior"
+            app:layout_behavior="@string/searchbar_scrolling_view_behavior">
+            <!-- Screen content goes here. -->
+        </androidx.core.widget.NestedScrollView>
 
-        <androidx.appcompat.widget.SearchView
-            android:id="@+id/search_view"
-            android:layout_width="274dp"
-            android:layout_height="25dp"
-            android:layout_margin="10dp"
-            app:iconifiedByDefault="false"
-            app:queryHint="@string/search_hint" />
+        <com.google.android.material.search.SearchBar
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:hint="@string/search_hint" />
 
-</androidx.cardview.widget.CardView>
+        <com.google.android.material.search.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:hint="@string/search_hint"
+            app:layout_anchor="@id/search_bar">
+
+            <!-- Search suggestions/results go here (ScrollView, RecyclerView, etc.). -->
+
+        </com.google.android.material.search.SearchView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 </RelativeLayout>

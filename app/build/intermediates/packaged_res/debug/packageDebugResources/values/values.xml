@@ -7,7 +7,7 @@
     <color name="white">#FFFFFF</color>
     <string name="already_sign_up">sudah punya akun?</string>
     <string name="app_name">Semaroam</string>
-    <string name="back">Kembali</string>
+    <string name="back">Go back</string>
     <string name="copyright">© 2024 Semaroam</string>
     <string name="desc1">Kami telah merekomendasikan tempat tempat terbaik untuk anda, lihatlah dan jelajahi.</string>
     <string name="detail">Detail</string>
@@ -18,12 +18,11 @@
     <string name="landing_text_part1"><b>Siap untuk memulai !</b></string>
     <string name="landing_text_part2">Bersiaplah untuk menjelajahi\n tempat-tempat menarik di Semarang</string>
     <string name="logout">Keluar</string>
-    <string name="more">Explore semarang</string>
     <string name="name">Nama</string>
     <string name="not_sign_up">belum punya akun?</string>
     <string name="password">Kata sandi</string>
     <string name="profil">Profil</string>
-    <string name="search_hint">Apa yang anda cari ...</string>
+    <string name="search_hint">Apa yang sedang anda cari ...</string>
     <string name="sign_in">Masuk</string>
     <string name="sign_up">Daftar</string>
     <string name="started">Jelajahi sekarang</string>
