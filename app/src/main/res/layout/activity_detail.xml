@@ -151,28 +151,6 @@
             android:layout_marginStart="8dp"
             android:textSize="16sp"/>
 
-        <TextView
-            android:id="@+id/place_id_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ID Tempat:"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"
-            app:layout_constraintTop_toBottomOf="@id/category"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="8dp"
-            android:textSize="14sp"/>
-
-        <TextView
-            android:id="@+id/place_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/place_id_label"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="4dp"
-            android:layout_marginStart="8dp"
-            android:textSize="14sp"/>
 
         <TextView
             android:id="@+id/place_ratings_label"
@@ -181,7 +159,7 @@
             android:text="Rating Tempat:"
             android:textStyle="bold"
             android:textColor="@android:color/black"
-            app:layout_constraintTop_toBottomOf="@id/place_id"
+            app:layout_constraintTop_toBottomOf="@id/category"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="16dp"
             android:layout_marginStart="8dp"

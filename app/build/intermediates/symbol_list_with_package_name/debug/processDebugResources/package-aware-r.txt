@@ -3498,7 +3498,6 @@ id percent
 id pin
 id place_city
 id place_id
-id place_id_label
 id place_image
 id place_name
 id place_name_label

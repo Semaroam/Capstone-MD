@@ -1,62 +1,66 @@
 [
     {
-        "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/activity_category_results.xml",
-        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_category_results.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\activity_home.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_home.xml"
     },
     {
-        "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/activity_register.xml",
-        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_register.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\fragment_ulasan.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\fragment_ulasan.xml"
     },
     {
-        "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/fragment_versi.xml",
-        "source": "com.dicoding.semaroam.app-main-34:/layout/fragment_versi.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/item_category_result.xml",
-        "source": "com.dicoding.semaroam.app-main-34:/layout/item_category_result.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\activity_recommendation.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_recommendation.xml"
     },
     {
-        "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/activity_search_results.xml",
-        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_search_results.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\activity_detail.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_detail.xml"
     },
     {
-        "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/activity_home.xml",
-        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_home.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\item_place_card.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\item_place_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\activity_search_results.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_search_results.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\item_category_result.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\item_category_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\item_recommendation.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\item_recommendation.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\fragment_versi.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\fragment_versi.xml"
     },
     {
         "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/activity_detail.xml",
         "source": "com.dicoding.semaroam.app-main-34:/layout/activity_detail.xml"
     },
     {
-        "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/item_recommendation.xml",
-        "source": "com.dicoding.semaroam.app-main-34:/layout/item_recommendation.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\dialog_progress.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\dialog_progress.xml"
     },
     {
-        "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/fragment_ulasan.xml",
-        "source": "com.dicoding.semaroam.app-main-34:/layout/fragment_ulasan.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/activity_profile.xml",
-        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_profile.xml"
-    },
-    {
-        "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/item_place_card.xml",
-        "source": "com.dicoding.semaroam.app-main-34:/layout/item_place_card.xml"
-    },
-    {
-        "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/activity_login.xml",
-        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_login.xml"
-    },
-    {
-        "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/dialog_progress.xml",
-        "source": "com.dicoding.semaroam.app-main-34:/layout/dialog_progress.xml"
-    },
-    {
-        "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/activity_main.xml",
-        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_main.xml"
-    },
-    {
-        "merged": "com.dicoding.semaroam.app-mergeDebugResources-31:/layout/activity_recommendation.xml",
-        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_recommendation.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-mergeDebugResources-31:\\layout\\activity_category_results.xml",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_category_results.xml"
     }
 ]
