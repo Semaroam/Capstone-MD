@@ -30,6 +30,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Semaroam" >
         <activity
+            android:name="com.dicoding.semaroam.view.recommendations.RecommendationActivity"
+            android:exported="false" />
+        <activity
             android:name="com.dicoding.semaroam.view.searchresult.CategoryResultsActivity"
             android:exported="false" />
         <activity

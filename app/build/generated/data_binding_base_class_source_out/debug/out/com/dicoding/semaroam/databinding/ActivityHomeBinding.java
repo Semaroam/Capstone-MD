@@ -16,7 +16,6 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.dicoding.semaroam.R;
 import com.google.android.material.card.MaterialCardView;
-import com.google.android.material.search.SearchBar;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -68,9 +67,6 @@ public final class ActivityHomeBinding implements ViewBinding {
   public final RelativeLayout relativeLayout;
 
   @NonNull
-  public final SearchBar searchBar;
-
-  @NonNull
   public final SearchView searchView;
 
   @NonNull
@@ -83,7 +79,7 @@ public final class ActivityHomeBinding implements ViewBinding {
       @NonNull ImageButton etProfile, @NonNull LinearLayout highlightContainer,
       @NonNull ImageView image, @NonNull RelativeLayout main, @NonNull TextView placeName,
       @NonNull TextView placeRatings, @NonNull RelativeLayout relativeLayout,
-      @NonNull SearchBar searchBar, @NonNull SearchView searchView, @NonNull TextView tvHiUser) {
+      @NonNull SearchView searchView, @NonNull TextView tvHiUser) {
     this.rootView = rootView;
     this.card = card;
     this.category1Container = category1Container;
@@ -99,7 +95,6 @@ public final class ActivityHomeBinding implements ViewBinding {
     this.placeName = placeName;
     this.placeRatings = placeRatings;
     this.relativeLayout = relativeLayout;
-    this.searchBar = searchBar;
     this.searchView = searchView;
     this.tvHiUser = tvHiUser;
   }
@@ -211,12 +206,6 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.search_bar;
-      SearchBar searchBar = ViewBindings.findChildViewById(rootView, id);
-      if (searchBar == null) {
-        break missingId;
-      }
-
       id = R.id.search_view;
       SearchView searchView = ViewBindings.findChildViewById(rootView, id);
       if (searchView == null) {
@@ -232,7 +221,7 @@ public final class ActivityHomeBinding implements ViewBinding {
       return new ActivityHomeBinding((RelativeLayout) rootView, card, category1Container,
           category2Container, category3Container, category4Container, category5Container, city,
           etProfile, highlightContainer, image, main, placeName, placeRatings, relativeLayout,
-          searchBar, searchView, tvHiUser);
+          searchView, tvHiUser);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

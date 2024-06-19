@@ -12,6 +12,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
@@ -33,6 +34,8 @@ class HomeActivity : AppCompatActivity() {
     private val highlightedPlaces = mutableListOf<PlaceData>()
     private val handler = Handler(Looper.getMainLooper())
     private lateinit var runnable: Runnable
+
+
 
     @SuppressLint("SetTextI18n", "MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -181,6 +184,31 @@ class HomeActivity : AppCompatActivity() {
         val intent = Intent(this@HomeActivity, CategoryResultsActivity::class.java)
         intent.putExtra("category", category)
         startActivity(intent)
+    }
+
+    @Deprecated("Deprecated in Java")
+    @SuppressLint("MissingSuperCall")
+    override fun onBackPressed() {
+        AlertDialog.Builder(this)
+            .setTitle("Konfirmasi")
+            .setMessage("Apakah Anda yakin ingin keluar?")
+            .setPositiveButton("Ya") { _, _ ->
+                // Hapus data pengguna dari SharedPreferences
+                val editor = sharedPreferences.edit()
+                editor.clear()
+                editor.apply()
+
+                // Arahkan pengguna ke MainActivity
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+            .setNegativeButton("Tidak") { dialog, _ ->
+                // Tutup dialog
+                dialog.dismiss()
+            }
+            .create()
+            .show()
     }
 
     override fun onDestroy() {

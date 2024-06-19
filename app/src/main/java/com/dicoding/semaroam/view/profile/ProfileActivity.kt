@@ -1,9 +1,13 @@
 package com.dicoding.semaroam.view.profile
 
 import android.annotation.SuppressLint
+import android.app.AlertDialog
+import android.app.Dialog
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
@@ -19,8 +23,8 @@ import com.google.android.material.tabs.TabLayoutMediator
 import androidx.viewpager2.widget.ViewPager2
 import com.dicoding.semaroam.R
 import com.dicoding.semaroam.adapter.MyPagerAdapter
-import com.google.android.material.tabs.TabLayout
 import com.dicoding.semaroam.view.start.HomeActivity
+import com.google.android.material.tabs.TabLayout
 
 class ProfileActivity : AppCompatActivity() {
     private lateinit var nameTextView: TextView
@@ -60,7 +64,7 @@ class ProfileActivity : AppCompatActivity() {
         loadUserData()
 
         logoutButton.setOnClickListener {
-            logoutUser()
+            confirmLogout()
         }
 
         backButton.setOnClickListener {
@@ -75,6 +79,28 @@ class ProfileActivity : AppCompatActivity() {
 
         nameTextView.text = name
         usernameTextView.text = "@$username"
+    }
+
+    private fun confirmLogout() {
+        val alertDialog = AlertDialog.Builder(this)
+        alertDialog.setTitle("Konfirmasi")
+        alertDialog.setMessage("Apakah Anda yakin ingin keluar?")
+        alertDialog.setPositiveButton("Ya") { _, _ ->
+            val progressDialog = Dialog(this)
+            progressDialog.setContentView(R.layout.dialog_progress)
+            progressDialog.setCancelable(false)
+            progressDialog.show()
+
+            // Simulate logout process with delay
+            Handler(Looper.getMainLooper()).postDelayed({
+                progressDialog.dismiss()
+                logoutUser()
+            }, 2000) // delay 2 seconds
+        }
+        alertDialog.setNegativeButton("Tidak") { dialog, _ ->
+            dialog.dismiss()
+        }
+        alertDialog.show()
     }
 
     private fun logoutUser() {

@@ -4,8 +4,11 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.dicoding.semaroam.R
 import com.dicoding.semaroam.data.retrofit.ApiConfig
 import com.dicoding.semaroam.data.retrofit.LoginRequest
 import com.dicoding.semaroam.data.retrofit.LoginResponse
@@ -64,21 +67,21 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun loginUser(username: String, password: String) {
-
-        Log.d("LoginActivity", "Logging in user with username: $username, password: $password")
+        val progressBar = findViewById<ProgressBar>(R.id.progressBar)
+        progressBar.visibility = View.VISIBLE
 
         val apiService = ApiConfig.getApiService()
         val loginRequest = LoginRequest(username, password)
 
-        Log.d("LoginActivity", "Sending login request: $loginRequest")
-
         apiService.loginUser(loginRequest).enqueue(object : Callback<LoginResponse> {
             override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
+                progressBar.visibility = View.GONE
+
                 if (response.isSuccessful) {
                     val loginResponse = response.body()
                     Log.d("LoginActivity", "Login response received: $loginResponse")
                     if (loginResponse?.accessToken != null) {
-                            with(sharedPreferences.edit()) {
+                        with(sharedPreferences.edit()) {
                             putString("access_token", loginResponse.accessToken)
                             apply()
                         }
@@ -104,6 +107,8 @@ class LoginActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
+                progressBar.visibility = View.GONE
+
                 Log.e("LoginActivity", "Network error: ${t.localizedMessage}", t)
                 Toast.makeText(this@LoginActivity, "Network error: ${t.localizedMessage}", Toast.LENGTH_SHORT).show()
             }

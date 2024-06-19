@@ -14,7 +14,6 @@ import com.bumptech.glide.Glide
 import com.dicoding.semaroam.R
 import com.dicoding.semaroam.data.retrofit.ApiConfig
 import com.dicoding.semaroam.data.retrofit.PlaceData
-import com.dicoding.semaroam.data.retrofit.PlaceDetailResponse
 import com.dicoding.semaroam.data.retrofit.PlaceResponse
 import com.dicoding.semaroam.view.detail.DetailActivity
 import com.dicoding.semaroam.view.start.HomeActivity
@@ -30,10 +29,6 @@ class SearchResultsActivity : AppCompatActivity() {
 
         val category = intent.getStringExtra("category")
         val keyword = intent.getStringExtra("keyword")
-        val placeId = intent.getIntExtra("placeId", -1)
-
-        val titleTextView: TextView = findViewById(R.id.title_text_view)
-        titleTextView.text = category ?: keyword ?: placeId.toString()
 
         val backButton = findViewById<ImageButton>(R.id.back_button)
         backButton.setOnClickListener {
@@ -45,8 +40,6 @@ class SearchResultsActivity : AppCompatActivity() {
             searchPlacesByCategory(category)
         } else if (keyword != null) {
             searchPlacesByKeyword(keyword)
-        } else if (placeId != -1) {
-            searchPlaceById(placeId)
         }
     }
 
@@ -72,32 +65,6 @@ class SearchResultsActivity : AppCompatActivity() {
 
             override fun onFailure(call: Call<PlaceResponse>, t: Throwable) {
                 handleFailure(t)
-            }
-        })
-    }
-
-    private fun searchPlaceById(placeId: Int) {
-        val client = ApiConfig.getApiService().getPlaceById(placeId)
-        client.enqueue(object : Callback<PlaceDetailResponse> {
-            override fun onResponse(call: Call<PlaceDetailResponse>, response: Response<PlaceDetailResponse>) {
-                if (response.isSuccessful) {
-                    val place = response.body()?.data
-                    if (place != null) {
-                        // Update the UI with the search result
-                        displayPlace(place)
-                    } else {
-                        Log.e("SearchResultsActivity", "No data available")
-                        Toast.makeText(this@SearchResultsActivity, "No data available", Toast.LENGTH_SHORT).show()
-                    }
-                } else {
-                    Log.e("SearchResultsActivity", "Failed to fetch data: ${response.message()}")
-                    Toast.makeText(this@SearchResultsActivity, "Failed to fetch data", Toast.LENGTH_SHORT).show()
-                }
-            }
-
-            override fun onFailure(call: Call<PlaceDetailResponse>, t: Throwable) {
-                Log.e("SearchResultsActivity", "Network error: ${t.message}")
-                Toast.makeText(this@SearchResultsActivity, "Network error", Toast.LENGTH_SHORT).show()
             }
         })
     }
@@ -162,40 +129,4 @@ class SearchResultsActivity : AppCompatActivity() {
         }
     }
 
-    private fun displayPlace(place: PlaceData) {
-        val container: LinearLayout = findViewById(R.id.search_results_container)
-        container.removeAllViews() // Clear previous views if any
-
-        val cardView = layoutInflater.inflate(R.layout.item_place_card, container, false)
-
-        val image: ImageView = cardView.findViewById(R.id.image)
-        val placeName: TextView = cardView.findViewById(R.id.place_name)
-        val city: TextView = cardView.findViewById(R.id.city)
-        val placeRatings: TextView = cardView.findViewById(R.id.place_ratings)
-
-        // Load image using Glide
-        Glide.with(this)
-            .load(place.Image)
-            .into(image)
-
-        placeName.text = place.Place_Name
-        city.text = place.City
-        placeRatings.text = place.Place_Ratings.toString()
-
-        // Set click listener on card
-        cardView.setOnClickListener {
-            val intent = Intent(this@SearchResultsActivity, DetailActivity::class.java).apply {
-                putExtra("Description", place.Description)
-                putExtra("Category", place.Category)
-                putExtra("Place_Id", place.Place_Id)
-                putExtra("Place_Ratings", place.Place_Ratings)
-                putExtra("Place_Name", place.Place_Name)
-                putExtra("City", place.City)
-                putExtra("Image", place.Image)
-            }
-            startActivity(intent)
-        }
-
-        container.addView(cardView)
-    }
 }

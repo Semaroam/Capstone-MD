@@ -4,8 +4,11 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.dicoding.semaroam.R
 import com.dicoding.semaroam.data.retrofit.ApiConfig
 import com.dicoding.semaroam.data.retrofit.SignupRequest
 import com.dicoding.semaroam.data.retrofit.SignupResponse
@@ -74,7 +77,8 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun registerUser(name: String, username: String, password: String) {
-        Log.d("RegisterActivity", "Registering user with name: $name, username: $username, password: $password")
+        val progressBar = findViewById<ProgressBar>(R.id.progressBar)
+        progressBar.visibility = View.VISIBLE
 
         val apiService = ApiConfig.getApiService()
         val signupRequest = SignupRequest(username, password, name)
@@ -82,6 +86,8 @@ class RegisterActivity : AppCompatActivity() {
         Log.d("RegisterActivity", "Sending signup request: $signupRequest")
         apiService.signupUser(signupRequest).enqueue(object : Callback<SignupResponse> {
             override fun onResponse(call: Call<SignupResponse>, response: Response<SignupResponse>) {
+                progressBar.visibility = View.GONE
+
                 if (response.isSuccessful) {
                     val signupResponse = response.body()
                     Log.d("RegisterActivity", "Signup response received: $signupResponse")
@@ -105,6 +111,8 @@ class RegisterActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<SignupResponse>, t: Throwable) {
+                progressBar.visibility = View.GONE
+
                 Log.e("RegisterActivity", "Network error: ${t.localizedMessage}", t)
                 Toast.makeText(this@RegisterActivity, "Network error: ${t.localizedMessage}", Toast.LENGTH_SHORT).show()
             }

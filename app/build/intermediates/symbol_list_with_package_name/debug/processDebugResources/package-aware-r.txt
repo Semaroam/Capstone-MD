@@ -3021,6 +3021,7 @@ drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_like
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -3106,6 +3107,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rounded_box
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3506,11 +3508,14 @@ id position
 id postLayout
 id pressed
 id profcard_view
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id recommendation_title
 id rectangles
+id recycler_view
 id register_link
 id relativeLayout
 id report_drawn
@@ -3526,6 +3531,7 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id score
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3788,6 +3794,7 @@ layout activity_home
 layout activity_login
 layout activity_main
 layout activity_profile
+layout activity_recommendation
 layout activity_register
 layout activity_search_results
 layout custom_dialog
@@ -3806,12 +3813,14 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_progress
 layout fragment_ulasan
 layout fragment_versi
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_category_result
 layout item_place_card
+layout item_recommendation
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3934,6 +3943,7 @@ string explore
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string foryou
 string hello_blank_fragment
 string hi
 string hide_bottom_view_on_scroll_behavior

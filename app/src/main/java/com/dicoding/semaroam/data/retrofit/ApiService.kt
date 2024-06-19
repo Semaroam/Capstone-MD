@@ -37,10 +37,6 @@ data class PlaceResponse(
     val data: List<PlaceData>
 )
 
-data class PlaceDetailResponse(
-    val message: String,
-    val data: PlaceData?
-)
 
 data class PlaceData(
     val Description: String,
@@ -50,6 +46,24 @@ data class PlaceData(
     val Place_Name: String,
     val City: String,
     val Image: String
+)
+
+data class RecommendationResponse(
+    val message: String,
+    val data_req: PlaceData,
+    val total_data_recommendation: Int,
+    val data: List<RecommendationData>
+)
+
+data class RecommendationData(
+    val Description: String,
+    val Category: String,
+    val Place_Id: String,
+    val Place_Ratings: Int,
+    val Place_Name: String,
+    val City: String,
+    val Image: String,
+    val Score: Double
 )
 
 interface AuthService {
@@ -68,12 +82,12 @@ interface AuthService {
     @GET("place")
     fun getAllPlaces(): Call<PlaceResponse>
 
-    @GET("place/{id}")
-    fun getPlaceById(@Path("id") placeId: Int): Call<PlaceDetailResponse>
-
     @GET("place/keyword/{keyword}")
     fun getPlaceByKeyword(@Path("keyword") keyword: String): Call<PlaceResponse>
 
     @GET("place/category/{category}")
     fun getPlaceByCategory(@Path("category") category: String): Call<PlaceResponse>
+
+    @GET("place/{id}")
+    fun getRecommendations(@Path("id") placeId: Int): Call<RecommendationResponse>
 }
