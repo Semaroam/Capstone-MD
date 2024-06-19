@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -45,12 +46,16 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final RelativeLayout main;
 
   @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
   public final TextView signinLink;
 
   private ActivityRegisterBinding(@NonNull RelativeLayout rootView, @NonNull MaterialCardView card,
       @NonNull Button daftarButton, @NonNull TextInputLayout etName,
       @NonNull TextInputLayout etPassword, @NonNull TextInputLayout etUsername,
-      @NonNull ImageView imageView, @NonNull RelativeLayout main, @NonNull TextView signinLink) {
+      @NonNull ImageView imageView, @NonNull RelativeLayout main, @NonNull ProgressBar progressBar,
+      @NonNull TextView signinLink) {
     this.rootView = rootView;
     this.card = card;
     this.daftarButton = daftarButton;
@@ -59,6 +64,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
     this.etUsername = etUsername;
     this.imageView = imageView;
     this.main = main;
+    this.progressBar = progressBar;
     this.signinLink = signinLink;
   }
 
@@ -127,6 +133,12 @@ public final class ActivityRegisterBinding implements ViewBinding {
 
       RelativeLayout main = (RelativeLayout) rootView;
 
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
       id = R.id.signin_link;
       TextView signinLink = ViewBindings.findChildViewById(rootView, id);
       if (signinLink == null) {
@@ -134,7 +146,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
       }
 
       return new ActivityRegisterBinding((RelativeLayout) rootView, card, daftarButton, etName,
-          etPassword, etUsername, imageView, main, signinLink);
+          etPassword, etUsername, imageView, main, progressBar, signinLink);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
