@@ -1,7 +1,11 @@
 package com.dicoding.semaroam.view.detail
 
 import android.content.res.Resources
+import android.graphics.Color
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.style.ForegroundColorSpan
 import android.util.Log
 import android.view.View
 import android.widget.ImageButton
@@ -36,7 +40,6 @@ class DetailActivity : AppCompatActivity() {
             finish()
         }
 
-
         // Get the intent data
         val description = intent.getStringExtra("Description")
         val category = intent.getStringExtra("Category")
@@ -49,7 +52,23 @@ class DetailActivity : AppCompatActivity() {
         // Set the data to views
         findViewById<TextView>(R.id.description).text = description
         findViewById<TextView>(R.id.category).text = category
-        findViewById<TextView>(R.id.place_ratings).text = placeRatings.toString()
+
+        // Format the ratings
+        val star = "\u2605"
+        val ratingText = String.format("%s%d / 5", star, placeRatings)
+
+        // Create a SpannableString
+        val spannableString = SpannableString(ratingText)
+
+        // Create a ForegroundColorSpan
+        val colorSpan = ForegroundColorSpan(Color.YELLOW)
+
+        // Apply the ForegroundColorSpan to the SpannableString
+        spannableString.setSpan(colorSpan, 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+
+        // Set the text to the TextView
+        findViewById<TextView>(R.id.place_ratings).text = spannableString
+
         findViewById<TextView>(R.id.place_name).text = placeName
         findViewById<TextView>(R.id.city).text = city
 

@@ -160,110 +160,14 @@
 
 
 
-            <LinearLayout
-                android:id="@+id/category1_container"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/category_recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_all_rounded"
-                android:padding="16dp">
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Bahari"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/poppinsbold">
-                </TextView>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/category2_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_all_rounded"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Budaya"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/poppinsbold">
-                </TextView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/category3_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_all_rounded"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Taman Hiburan"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/poppinsbold">
-                </TextView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/category4_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_all_rounded"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Cagar Alam"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/poppinsbold">
-                </TextView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/category5_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_all_rounded"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Tempat Ibadah"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/poppinsbold">
-                </TextView>
-
-            </LinearLayout>
 
 
         </LinearLayout>
