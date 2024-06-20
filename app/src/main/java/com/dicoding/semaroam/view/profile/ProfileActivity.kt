@@ -23,6 +23,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 import androidx.viewpager2.widget.ViewPager2
 import com.dicoding.semaroam.R
 import com.dicoding.semaroam.adapter.MyPagerAdapter
+import com.dicoding.semaroam.utils.PreferencesHelper
 import com.dicoding.semaroam.view.start.HomeActivity
 import com.google.android.material.tabs.TabLayout
 
@@ -39,6 +40,8 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
 
         val tabLayout = findViewById<TabLayout>(R.id.tab_layout)
         val viewPager = findViewById<ViewPager2>(R.id.view_pager)
@@ -58,7 +61,8 @@ class ProfileActivity : AppCompatActivity() {
         logoutButton = binding.logoutButton
         backButton = binding.backButton
         sharedPreferences = getSharedPreferences("user_pref", MODE_PRIVATE)
-
+        val preferencesHelper = PreferencesHelper(this)
+        preferencesHelper.setLoggedInStatus(false)
         authService = ApiConfig.getApiService()
 
         loadUserData()

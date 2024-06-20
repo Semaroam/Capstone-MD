@@ -49,6 +49,8 @@ class HomeActivity : AppCompatActivity() {
 
         sharedPreferences = getSharedPreferences("user_pref", MODE_PRIVATE)
 
+
+
         profileButton.setOnClickListener {
             val intent = Intent(this@HomeActivity, ProfileActivity::class.java)
             startActivity(intent)
@@ -173,30 +175,7 @@ class HomeActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    @Deprecated("Deprecated in Java")
-    @SuppressLint("MissingSuperCall")
-    override fun onBackPressed() {
-        AlertDialog.Builder(this)
-            .setTitle("Konfirmasi")
-            .setMessage("Apakah Anda yakin ingin keluar?")
-            .setPositiveButton("Ya") { _, _ ->
-                // Hapus data pengguna dari SharedPreferences
-                val editor = sharedPreferences.edit()
-                editor.clear()
-                editor.apply()
 
-                // Arahkan pengguna ke MainActivity
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-                finish()
-            }
-            .setNegativeButton("Tidak") { dialog, _ ->
-                // Tutup dialog
-                dialog.dismiss()
-            }
-            .create()
-            .show()
-    }
 
     override fun onDestroy() {
         super.onDestroy()
