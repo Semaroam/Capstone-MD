@@ -36,8 +36,8 @@ class UlasanFragment : Fragment() {
 
     private fun showComingSoonDialog() {
         AlertDialog.Builder(context)
-            .setTitle("Coming Soon")
-            .setMessage("This feature is under development.")
+            .setTitle("Segera Hadir")
+            .setMessage("Fitur ini sedang dalam pengembangan.")
             .setPositiveButton("OK") { dialog, _ ->
                 dialog.dismiss()
             }
