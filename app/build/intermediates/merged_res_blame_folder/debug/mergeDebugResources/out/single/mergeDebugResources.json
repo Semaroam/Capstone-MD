@@ -1,274 +1,262 @@
 [
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_item_category_cagar_alam.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\item_category_cagar_alam.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_item_recommendation.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/item_recommendation.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_item_liked_place.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\item_liked_place.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_item_category_cagar_alam.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/item_category_cagar_alam.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_tempat_ibadah.jpeg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\tempat_ibadah.jpeg"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_bahari.png.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/bahari.png"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_button_bg.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\button_bg.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_logo.png.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/logo.png"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_item_category_tempat_ibadah.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/item_category_tempat_ibadah.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_activity_recommendation.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_recommendation.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_taman_hiburan.jpeg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\taman_hiburan.jpeg"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_bg_rounded.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\bg_rounded.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-xhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_item_category_default.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\item_category_default.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_rounded_box.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\rounded_box.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_budaya.jpeg.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/budaya.jpeg"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_bg_all_rounded.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\bg_all_rounded.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_item_category_taman_hiburan.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\item_category_taman_hiburan.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_tempat_ibadah.jpeg.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/tempat_ibadah.jpeg"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\font_bebas.ttf.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\font\\bebas.ttf"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_item_category_taman_hiburan.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/item_category_taman_hiburan.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_register.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/font_oswaldregular.ttf.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/font/oswaldregular.ttf"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\font_poppinsbold.ttf.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\font\\poppinsbold.ttf"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_circle.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\circle.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_cagar_alam.png.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/cagar_alam.png"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_lawangsewu.jpg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\lawangsewu.jpg"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_logout.png.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\logout.png"
+        "merged": "com.dicoding.semaroam.app-debug-32:/xml_data_extraction_rules.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_item_place_card.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/item_place_card.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_item_recommendation.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\item_recommendation.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_activity_login.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\xml\\data_extraction_rules.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/font_bebas.ttf.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/font/bebas.ttf"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_cagar_alam.png.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\cagar_alam.png"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_activity_search_results.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_search_results.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_bahari.png.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\bahari.png"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_ic_liked.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/ic_liked.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_activity_liked_places.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_liked_places.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_bg_all_rounded.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/bg_all_rounded.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_logo.png.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\logo.png"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_baseline_arrow_right_24.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/baseline_arrow_right_24.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_activity_home.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_home.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+        "merged": "com.dicoding.semaroam.app-debug-32:/xml_backup_rules.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_activity_profile.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_profile.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_button_bg.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/button_bg.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_activity_profile.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_profile.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_rounded_box.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/rounded_box.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_item_category.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\item_category.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_lawangsewu.jpg.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/lawangsewu.jpg"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_fragment_versi.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\fragment_versi.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_baseline_arrow_back_24.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/baseline_arrow_back_24.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_baseline_arrow_back_24.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\baseline_arrow_back_24.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_logout.png.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/logout.png"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_budaya.jpeg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\budaya.jpeg"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-mdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_ic_like.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\ic_like.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_activity_home.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_home.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_ic_like.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/ic_like.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_circle.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/circle.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_baseline_arrow_right_24.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\baseline_arrow_right_24.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-hdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_ic_liked.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\ic_liked.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_bg_rounded.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/bg_rounded.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_activity_detail.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_detail.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_activity_recommendation.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_recommendation.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_item_category_result.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/item_category_result.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_main.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_dialog_progress.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/dialog_progress.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_item_category_result.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\item_category_result.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-xxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\font_oswaldregular.ttf.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\font\\oswaldregular.ttf"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_item_place_card.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\item_place_card.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_fragment_ulasan.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\fragment_ulasan.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_fragment_ulasan.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/fragment_ulasan.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\font_poppinsregular.ttf.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\font\\poppinsregular.ttf"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_activity_category_results.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_category_results.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\drawable_ic_profile.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\drawable\\ic_profile.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_ic_profile.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/ic_profile.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_item_category_budaya.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\item_category_budaya.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_item_category_default.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/item_category_default.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_activity_category_results.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_category_results.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/drawable_taman_hiburan.jpeg.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/drawable/taman_hiburan.jpeg"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_activity_detail.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_detail.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_item_category_bahari.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/item_category_bahari.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_item_category_tempat_ibadah.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\item_category_tempat_ibadah.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/font_poppinsregular.ttf.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/font/poppinsregular.ttf"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_login.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_activity_main.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_activity_search_results.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\activity_search_results.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_item_category_budaya.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/item_category_budaya.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_item_category.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/item_category.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\xml\\backup_rules.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-xhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_dialog_progress.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\dialog_progress.xml"
+        "merged": "com.dicoding.semaroam.app-debug-32:/layout_activity_register.xml.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/layout/activity_register.xml"
     },
     {
         "merged": "com.dicoding.semaroam.app-debug-32:/layout_fragment_versi.xml.flat",
         "source": "com.dicoding.semaroam.app-main-34:/layout/fragment_versi.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\layout_item_category_bahari.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\layout\\item_category_bahari.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-debug-32:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.dicoding.semaroam.app-main-34:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.dicoding.semaroam.app-debug-32:/font_poppinsbold.ttf.flat",
+        "source": "com.dicoding.semaroam.app-main-34:/font/poppinsbold.ttf"
     }
 ]
