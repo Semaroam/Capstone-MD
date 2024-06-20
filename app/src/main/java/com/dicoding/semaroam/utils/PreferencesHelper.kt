@@ -14,4 +14,16 @@ class PreferencesHelper(context: Context) {
     fun getLoggedInStatus(): Boolean {
         return sharedPreferences.getBoolean("isLoggedIn", false)
     }
+
+    fun setUserName(username: String) {
+        val editor = sharedPreferences.edit()
+        editor.putString("user_name", username)
+        editor.apply()
+    }
+
+    fun clearLoggedInStatus() {
+        val editor = sharedPreferences.edit()
+        editor.putBoolean("isLoggedIn", false)
+        editor.apply()
+    }
 }

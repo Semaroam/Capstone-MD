@@ -36,8 +36,7 @@ class LoginActivity : AppCompatActivity() {
         val passwordEditText = binding.etPassword
         val signUpLink = binding.registerLink
 
-        val preferencesHelper = PreferencesHelper(this)
-        preferencesHelper.setLoggedInStatus(true)
+
 
 
         loginButton.setOnClickListener {
@@ -48,6 +47,8 @@ class LoginActivity : AppCompatActivity() {
 
             if (validateLogin(username, password)) {
                 loginUser(username, password)
+                val preferencesHelper = PreferencesHelper(this)
+                preferencesHelper.setLoggedInStatus(true)
             }
         }
 
@@ -95,6 +96,7 @@ class LoginActivity : AppCompatActivity() {
                                 putString("user_name", userData.nama)
                                 putString("user_username", userData.username)
                                 apply()
+
                             }
                         }
                         Toast.makeText(this@LoginActivity, loginResponse.message, Toast.LENGTH_SHORT).show()

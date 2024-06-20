@@ -2,6 +2,7 @@ package com.dicoding.semaroam.view.start
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         val preferencesHelper = PreferencesHelper(this)
         if (preferencesHelper.getLoggedInStatus()) {
+            Log.d("MainActivity", "User is already logged in ${preferencesHelper.getLoggedInStatus()}")
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             finish()
