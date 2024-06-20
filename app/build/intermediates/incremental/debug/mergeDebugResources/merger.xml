@@ -11521,7 +11521,7 @@
         <item name="cornerSizeBottomLeft">30dp</item>
     </style></file><file path="C:\Users\HP\AndroidStudioProjects\CapstoneProject-MD\app\src\main\res\values\themes.xml" qualifiers=""><style name="Base.Theme.Semaroam" parent="Theme.Material3.DayNight.NoActionBar">
         
-        
+        <item name="colorPrimary">@color/primary</item> 
     </style><style name="Theme.Semaroam" parent="Base.Theme.Semaroam"/></file><file path="C:\Users\HP\AndroidStudioProjects\CapstoneProject-MD\app\src\main\res\values-night\themes.xml" qualifiers="night-v8"><style name="Base.Theme.Semaroam" parent="Theme.Material3.DayNight.NoActionBar">
         
         
