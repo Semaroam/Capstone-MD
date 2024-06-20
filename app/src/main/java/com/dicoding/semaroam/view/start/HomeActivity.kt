@@ -15,11 +15,14 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.dicoding.semaroam.R
 import com.dicoding.semaroam.data.retrofit.ApiConfig
 import com.dicoding.semaroam.data.retrofit.PlaceData
 import com.dicoding.semaroam.data.retrofit.PlaceResponse
+import com.dicoding.semaroam.view.adapter.CategoryAdapter
 import com.dicoding.semaroam.view.searchresult.CategoryResultsActivity
 import com.dicoding.semaroam.view.searchresult.SearchResultsActivity
 import com.dicoding.semaroam.view.detail.DetailActivity
@@ -28,14 +31,13 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+
 class HomeActivity : AppCompatActivity() {
     private lateinit var sharedPreferences: SharedPreferences
     private var placeIndex = 0
     private val highlightedPlaces = mutableListOf<PlaceData>()
     private val handler = Handler(Looper.getMainLooper())
     private lateinit var runnable: Runnable
-
-
 
     @SuppressLint("SetTextI18n", "MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,40 +54,26 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Load user name from SharedPreferences and set it to the TextView
         val userName = sharedPreferences.getString("user_name", "User")
         hiUserTextView.text = getString(R.string.hi) + " " + userName
 
-        // Set click listeners for each category
-        findViewById<LinearLayout>(R.id.category1_container).setOnClickListener {
-            openCategoryResultsActivity("Bahari")
-        }
-        findViewById<LinearLayout>(R.id.category2_container).setOnClickListener {
-            openCategoryResultsActivity("Budaya")
-        }
-        findViewById<LinearLayout>(R.id.category3_container).setOnClickListener {
-            openCategoryResultsActivity("Taman Hiburan")
-        }
-        findViewById<LinearLayout>(R.id.category4_container).setOnClickListener {
-            openCategoryResultsActivity("Cagar Alam")
-        }
-        findViewById<LinearLayout>(R.id.category5_container).setOnClickListener {
-            openCategoryResultsActivity("Tempat Ibadah")
+        val categories = listOf("Bahari", "Budaya", "Taman Hiburan", "Cagar Alam", "Tempat Ibadah")
+        val categoryRecyclerView: RecyclerView = findViewById(R.id.category_recycler_view)
+        categoryRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        categoryRecyclerView.adapter = CategoryAdapter(categories) { category ->
+            openCategoryResultsActivity(category)
         }
 
-        // Setup SearchView
         val searchView: SearchView = findViewById(R.id.search_view)
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 if (!query.isNullOrEmpty()) {
                     val intent = Intent(this@HomeActivity, SearchResultsActivity::class.java)
-                    val categories =
-                        listOf("Bahari", "Budaya", "Taman Hiburan", "Cagar Alam", "Tempat Ibadah")
+                    val categories = listOf("Bahari", "Budaya", "Taman Hiburan", "Cagar Alam", "Tempat Ibadah")
                     try {
                         val placeId = query.toInt()
                         intent.putExtra("placeId", placeId)
                     } catch (e: NumberFormatException) {
-                        // If the query is not a number, treat it as a keyword or category
                         if (categories.contains(query)) {
                             intent.putExtra("category", query)
                         } else {
@@ -98,7 +86,6 @@ class HomeActivity : AppCompatActivity() {
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
-                // Optional: handle text change if needed
                 return false
             }
         })

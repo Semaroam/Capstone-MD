@@ -8,6 +8,10 @@
     <string name="already_sign_up">sudah punya akun?</string>
     <string name="app_name">Semaroam</string>
     <string name="back">Kembali</string>
+    <string name="bahari">Jelajahi keindahan bawah laut dan pantai eksotis sekarang!</string>
+    <string name="budaya">Temukan kekayaan tradisi dan seni lokal yang memukau!</string>
+    <string name="cagar_alam">Kunjungi kawasan pelestarian dan lihat flora fauna langka!</string>
+    <string name="category">Kategori</string>
     <string name="copyright">© 2024 Semaroam</string>
     <string name="desc1">Kami telah merekomendasikan tempat tempat terbaik untuk anda, lihatlah dan jelajahi.</string>
     <string name="detail">Detail</string>
@@ -30,6 +34,8 @@
     <string name="sign_in">Masuk</string>
     <string name="sign_up">Daftar</string>
     <string name="started">Jelajahi sekarang</string>
+    <string name="taman_hiburan">Nikmati keseruan wahana dan atraksi menegangkan hari ini!</string>
+    <string name="tempat_ibadah">Rasakan kedamaian dan spiritualitas di tempat ibadah bersejarah!</string>
     <string name="username">Nama pengguna</string>
     <string name="welcome_message">Welcome to Home!</string>
     <style name="Base.Theme.Semaroam" parent="Theme.Material3.DayNight.NoActionBar">

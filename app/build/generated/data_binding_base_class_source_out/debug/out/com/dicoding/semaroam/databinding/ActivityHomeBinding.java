@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.dicoding.semaroam.R;
@@ -28,19 +29,7 @@ public final class ActivityHomeBinding implements ViewBinding {
   public final MaterialCardView card;
 
   @NonNull
-  public final LinearLayout category1Container;
-
-  @NonNull
-  public final LinearLayout category2Container;
-
-  @NonNull
-  public final LinearLayout category3Container;
-
-  @NonNull
-  public final LinearLayout category4Container;
-
-  @NonNull
-  public final LinearLayout category5Container;
+  public final RecyclerView categoryRecyclerView;
 
   @NonNull
   public final TextView city;
@@ -73,20 +62,14 @@ public final class ActivityHomeBinding implements ViewBinding {
   public final TextView tvHiUser;
 
   private ActivityHomeBinding(@NonNull RelativeLayout rootView, @NonNull MaterialCardView card,
-      @NonNull LinearLayout category1Container, @NonNull LinearLayout category2Container,
-      @NonNull LinearLayout category3Container, @NonNull LinearLayout category4Container,
-      @NonNull LinearLayout category5Container, @NonNull TextView city,
+      @NonNull RecyclerView categoryRecyclerView, @NonNull TextView city,
       @NonNull ImageButton etProfile, @NonNull LinearLayout highlightContainer,
       @NonNull ImageView image, @NonNull RelativeLayout main, @NonNull TextView placeName,
       @NonNull TextView placeRatings, @NonNull RelativeLayout relativeLayout,
       @NonNull SearchView searchView, @NonNull TextView tvHiUser) {
     this.rootView = rootView;
     this.card = card;
-    this.category1Container = category1Container;
-    this.category2Container = category2Container;
-    this.category3Container = category3Container;
-    this.category4Container = category4Container;
-    this.category5Container = category5Container;
+    this.categoryRecyclerView = categoryRecyclerView;
     this.city = city;
     this.etProfile = etProfile;
     this.highlightContainer = highlightContainer;
@@ -132,33 +115,9 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.category1_container;
-      LinearLayout category1Container = ViewBindings.findChildViewById(rootView, id);
-      if (category1Container == null) {
-        break missingId;
-      }
-
-      id = R.id.category2_container;
-      LinearLayout category2Container = ViewBindings.findChildViewById(rootView, id);
-      if (category2Container == null) {
-        break missingId;
-      }
-
-      id = R.id.category3_container;
-      LinearLayout category3Container = ViewBindings.findChildViewById(rootView, id);
-      if (category3Container == null) {
-        break missingId;
-      }
-
-      id = R.id.category4_container;
-      LinearLayout category4Container = ViewBindings.findChildViewById(rootView, id);
-      if (category4Container == null) {
-        break missingId;
-      }
-
-      id = R.id.category5_container;
-      LinearLayout category5Container = ViewBindings.findChildViewById(rootView, id);
-      if (category5Container == null) {
+      id = R.id.category_recycler_view;
+      RecyclerView categoryRecyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (categoryRecyclerView == null) {
         break missingId;
       }
 
@@ -218,8 +177,7 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityHomeBinding((RelativeLayout) rootView, card, category1Container,
-          category2Container, category3Container, category4Container, category5Container, city,
+      return new ActivityHomeBinding((RelativeLayout) rootView, card, categoryRecyclerView, city,
           etProfile, highlightContainer, image, main, placeName, placeRatings, relativeLayout,
           searchView, tvHiUser);
     }
