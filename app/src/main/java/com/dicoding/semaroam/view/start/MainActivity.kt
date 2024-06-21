@@ -2,12 +2,14 @@ package com.dicoding.semaroam.view.start
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.dicoding.semaroam.R
+import com.dicoding.semaroam.utils.PreferencesHelper
 import com.dicoding.semaroam.view.login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +25,14 @@ class MainActivity : AppCompatActivity() {
 
         // Find the button by its ID
         val getStartedButton: Button = findViewById(R.id.button)
+
+        val preferencesHelper = PreferencesHelper(this)
+        if (preferencesHelper.getLoggedInStatus()) {
+            Log.d("MainActivity", "User is already logged in ${preferencesHelper.getLoggedInStatus()}")
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         // Set an OnClickListener to the button
         getStartedButton.setOnClickListener {

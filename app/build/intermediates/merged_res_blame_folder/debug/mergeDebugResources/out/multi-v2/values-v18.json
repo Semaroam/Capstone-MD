@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.dicoding.semaroam.app-mergeDebugResources-30:/values-v18/values-v18.xml",
+            "outputFile": "com.dicoding.semaroam.app-mergeDebugResources-36:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\7fd3f7b85cd11588703f2df3b96d3544\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\5a922275201ce2f83eda2833e516b140\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

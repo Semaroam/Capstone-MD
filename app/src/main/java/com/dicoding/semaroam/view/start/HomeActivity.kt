@@ -30,6 +30,10 @@ import com.dicoding.semaroam.view.profile.ProfileActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.style.ForegroundColorSpan
+import android.graphics.Color
 
 
 class HomeActivity : AppCompatActivity() {
@@ -48,6 +52,8 @@ class HomeActivity : AppCompatActivity() {
         val hiUserTextView: TextView = findViewById(R.id.tv_hi_user)
 
         sharedPreferences = getSharedPreferences("user_pref", MODE_PRIVATE)
+
+
 
         profileButton.setOnClickListener {
             val intent = Intent(this@HomeActivity, ProfileActivity::class.java)
@@ -140,7 +146,23 @@ class HomeActivity : AppCompatActivity() {
 
             placeName.text = place.Place_Name
             city.text = place.City
-            placeRatings.text = place.Place_Ratings.toString()
+            // Format the ratings
+            val star = "\u2605"
+            val ratingText = String.format("%s%d / 5", star, place.Place_Ratings)
+
+            // Create a SpannableString
+            val spannableString = SpannableString(ratingText)
+
+            // Create a ForegroundColorSpan
+            val colorSpan = ForegroundColorSpan(Color.YELLOW)
+
+            // Apply the ForegroundColorSpan to the SpannableString
+            spannableString.setSpan(colorSpan, 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+
+            // Set the text to the TextView
+            placeRatings.text = spannableString
+
+
 
             // Set click listener on card
             cardView.setOnClickListener {
@@ -173,30 +195,7 @@ class HomeActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    @Deprecated("Deprecated in Java")
-    @SuppressLint("MissingSuperCall")
-    override fun onBackPressed() {
-        AlertDialog.Builder(this)
-            .setTitle("Konfirmasi")
-            .setMessage("Apakah Anda yakin ingin keluar?")
-            .setPositiveButton("Ya") { _, _ ->
-                // Hapus data pengguna dari SharedPreferences
-                val editor = sharedPreferences.edit()
-                editor.clear()
-                editor.apply()
 
-                // Arahkan pengguna ke MainActivity
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-                finish()
-            }
-            .setNegativeButton("Tidak") { dialog, _ ->
-                // Tutup dialog
-                dialog.dismiss()
-            }
-            .create()
-            .show()
-    }
 
     override fun onDestroy() {
         super.onDestroy()

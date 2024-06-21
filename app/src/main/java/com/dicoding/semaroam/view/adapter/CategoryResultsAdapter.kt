@@ -11,6 +11,11 @@ import com.bumptech.glide.Glide
 import com.dicoding.semaroam.R
 import com.dicoding.semaroam.data.retrofit.PlaceData
 import com.dicoding.semaroam.view.detail.DetailActivity
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.style.ForegroundColorSpan
+import android.graphics.Color
+
 
 class CategoryResultsAdapter : RecyclerView.Adapter<CategoryResultsAdapter.ViewHolder>() {
     private val places = mutableListOf<PlaceData>()
@@ -48,7 +53,21 @@ class CategoryResultsAdapter : RecyclerView.Adapter<CategoryResultsAdapter.ViewH
 
             placeName.text = place.Place_Name
             placeCity.text = place.City
-            placeRatings.text = place.Place_Ratings.toString()
+            // Format the ratings
+            val star = "\u2605"
+            val ratingText = String.format("%s%d / 5", star, place.Place_Ratings)
+
+            // Create a SpannableString
+            val spannableString = SpannableString(ratingText)
+
+            // Create a ForegroundColorSpan
+            val colorSpan = ForegroundColorSpan(Color.YELLOW)
+
+            // Apply the ForegroundColorSpan to the SpannableString
+            spannableString.setSpan(colorSpan, 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+
+            // Set the text to the TextView
+            placeRatings.text = spannableString
 
             itemView.setOnClickListener {
                 val intent = Intent(itemView.context, DetailActivity::class.java).apply {

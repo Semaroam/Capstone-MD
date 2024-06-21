@@ -32,9 +32,8 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-        if (intent.getBooleanExtra("FromRecommendation", false)) {
-            findViewById<TextView>(R.id.recommendation_title).visibility = View.GONE
-        }
+
+
         val backButton = findViewById<ImageButton>(R.id.back_button)
         backButton.setOnClickListener {
             finish()
@@ -52,6 +51,9 @@ class DetailActivity : AppCompatActivity() {
         // Set the data to views
         findViewById<TextView>(R.id.description).text = description
         findViewById<TextView>(R.id.category).text = category
+
+
+
 
         // Format the ratings
         val star = "\u2605"
@@ -102,15 +104,19 @@ class DetailActivity : AppCompatActivity() {
             override fun onResponse(call: Call<RecommendationResponse>, response: Response<RecommendationResponse>) {
                 if (response.isSuccessful) {
                     val recommendations = response.body()?.data ?: emptyList()
-                    Log.d("API_RESPONSE", recommendations.toString())
+                    Log.d("API_RESPONSE", "Recommendations: $recommendations")
                     recyclerView.adapter = RecommendationAdapter(recommendations)
+                    Log.d("API_RESPONSE", "Number of recommendations displayed: ${recommendations.size}")
                 } else {
                     // Handle error
+                    val errorMessage = response.errorBody()?.string()
+                    Log.e("API_ERROR", "Error occurred: $errorMessage")
                 }
             }
 
             override fun onFailure(call: Call<RecommendationResponse>, t: Throwable) {
                 // Handle failure
+                Log.e("API_FAILURE", "Failure occurred: ${t.message}")
             }
         })
     }

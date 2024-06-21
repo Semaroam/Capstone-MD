@@ -15,9 +15,6 @@
         android:theme="@style/Theme.Semaroam"
         tools:targetApi="31">
         <activity
-            android:name=".view.LikedPlacesActivity"
-            android:exported="false" />
-        <activity
             android:name=".view.recommendations.RecommendationActivity"
             android:exported="false" />
         <activity

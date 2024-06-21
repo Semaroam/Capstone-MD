@@ -23,6 +23,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 import androidx.viewpager2.widget.ViewPager2
 import com.dicoding.semaroam.R
 import com.dicoding.semaroam.adapter.MyPagerAdapter
+import com.dicoding.semaroam.utils.PreferencesHelper
 import com.dicoding.semaroam.view.start.HomeActivity
 import com.google.android.material.tabs.TabLayout
 
@@ -39,6 +40,7 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         val tabLayout = findViewById<TabLayout>(R.id.tab_layout)
         val viewPager = findViewById<ViewPager2>(R.id.view_pager)
@@ -86,6 +88,9 @@ class ProfileActivity : AppCompatActivity() {
         alertDialog.setTitle("Konfirmasi")
         alertDialog.setMessage("Apakah Anda yakin ingin keluar?")
         alertDialog.setPositiveButton("Ya") { _, _ ->
+            val preferencesHelper = PreferencesHelper(this)
+            preferencesHelper.clearLoggedInStatus() // Memanggil fungsi clearLoggedInStatus()
+
             val progressDialog = Dialog(this)
             progressDialog.setContentView(R.layout.dialog_progress)
             progressDialog.setCancelable(false)
@@ -95,6 +100,7 @@ class ProfileActivity : AppCompatActivity() {
             Handler(Looper.getMainLooper()).postDelayed({
                 progressDialog.dismiss()
                 logoutUser()
+
             }, 2000) // delay 2 seconds
         }
         alertDialog.setNegativeButton("Tidak") { dialog, _ ->
@@ -109,14 +115,22 @@ class ProfileActivity : AppCompatActivity() {
                 if (response.isSuccessful) {
                     clearUserData()
                     navigateToLogin()
-                    Toast.makeText(this@ProfileActivity, "User was logged out successfully!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this@ProfileActivity,
+                        "User was logged out successfully!",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 } else {
                     Toast.makeText(this@ProfileActivity, "Logout failed", Toast.LENGTH_SHORT).show()
                 }
             }
 
             override fun onFailure(call: Call<Unit>, t: Throwable) {
-                Toast.makeText(this@ProfileActivity, "Logout failed: ${t.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this@ProfileActivity,
+                    "Logout failed: ${t.message}",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         })
     }

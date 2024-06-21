@@ -13,6 +13,7 @@ import com.dicoding.semaroam.data.retrofit.ApiConfig
 import com.dicoding.semaroam.data.retrofit.LoginRequest
 import com.dicoding.semaroam.data.retrofit.LoginResponse
 import com.dicoding.semaroam.databinding.ActivityLoginBinding
+import com.dicoding.semaroam.utils.PreferencesHelper
 import com.dicoding.semaroam.view.register.RegisterActivity
 import com.dicoding.semaroam.view.start.HomeActivity
 import retrofit2.Call
@@ -35,6 +36,9 @@ class LoginActivity : AppCompatActivity() {
         val passwordEditText = binding.etPassword
         val signUpLink = binding.registerLink
 
+
+
+
         loginButton.setOnClickListener {
             val username = usernameEditText.editText?.text.toString().trim()
             val password = passwordEditText.editText?.text.toString().trim()
@@ -43,6 +47,8 @@ class LoginActivity : AppCompatActivity() {
 
             if (validateLogin(username, password)) {
                 loginUser(username, password)
+                val preferencesHelper = PreferencesHelper(this)
+                preferencesHelper.setLoggedInStatus(true)
             }
         }
 
@@ -90,10 +96,12 @@ class LoginActivity : AppCompatActivity() {
                                 putString("user_name", userData.nama)
                                 putString("user_username", userData.username)
                                 apply()
+
                             }
                         }
                         Toast.makeText(this@LoginActivity, loginResponse.message, Toast.LENGTH_SHORT).show()
                         val intent = Intent(this@LoginActivity, HomeActivity::class.java)
+                        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(intent)
                         finish()
                     } else {

@@ -52,9 +52,20 @@ dependencies {
     implementation("androidx.viewpager2:viewpager2:1.0.0")
     implementation ("androidx.recyclerview:recyclerview:1.2.1")
     implementation("com.github.bumptech.glide:glide:4.12.0")
+    implementation(libs.androidx.datastore.core.android)
     annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
     implementation ("jp.wasabeef:glide-transformations:4.3.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    // ViewModel
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.2")
+
+    // LiveData
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.8.2")
+
+    // DataStore
+    implementation ("androidx.datastore:datastore-preferences:1.1.1")
+
+
 }
