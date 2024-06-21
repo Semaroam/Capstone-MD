@@ -38,13 +38,13 @@ class RecommendationAdapter(private val recommendations: List<RecommendationData
             val intent = Intent(holder.itemView.context, DetailActivity::class.java)
             intent.putExtra("Description", recommendation.Description)
             intent.putExtra("Category", recommendation.Category)
-            intent.putExtra("Place_Id", recommendation.Place_Id)
+            intent.putExtra("Place_Id", recommendation.Place_Id.toInt())
             intent.putExtra("Place_Ratings", recommendation.Place_Ratings)
             intent.putExtra("Place_Name", recommendation.Place_Name)
             intent.putExtra("City", recommendation.City)
             intent.putExtra("Image", recommendation.Image)
             intent.putExtra("Score", recommendation.Score)
-            intent.putExtra("FromRecommendation", true) // Add this line
+            intent.putExtra("FromRecommendation", true)
             holder.itemView.context.startActivity(intent)
         }
     }
